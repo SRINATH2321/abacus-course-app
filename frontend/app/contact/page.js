@@ -51,7 +51,7 @@ export default function ContactPage() {
                   <span className={styles.infoIcon}>📧</span>
                   <div>
                     <h4>Email</h4>
-                    <a href="mailto:info@krishkidsisland.com">info@krishkidsisland.com</a>
+                    <a href="mailto:krishkidsisland@gmail.com">krishkidsisland@gmail.com</a>
                   </div>
                 </div>
 

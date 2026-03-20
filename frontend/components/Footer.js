@@ -66,7 +66,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <span className={styles.contactIcon}>📧</span>
-                  <a href="mailto:info@krishkidsisland.com">info@krishkidsisland.com</a>
+                  <a href="mailto:krishkidsisland@gmail.com">krishkidsisland@gmail.com</a>
                 </li>
                 <li>
                   <span className={styles.contactIcon}>📍</span>

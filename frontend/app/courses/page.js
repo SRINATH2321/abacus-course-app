@@ -4,7 +4,7 @@ import { MOCK_COURSES } from '@/lib/supabase';
 
 export const metadata = {
   title: 'Courses | KRISH KIDS ISLAND Academy',
-  description: 'Explore our courses: Phonics, Abacus, Drawing, Spell Bee, and Handwriting at KRISH KIDS ISLAND.',
+  description: 'Explore our courses: Phonics, Abacus, Drawing, Spell Bee, Handwriting, and Vedic Maths at KRISH KIDS ISLAND.',
 };
 
 export default function CoursesPage() {

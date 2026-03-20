@@ -15,7 +15,7 @@ export const MOCK_SETTINGS = {
   description: 'We are a premier abacus learning academy dedicated to developing mental arithmetic skills, concentration, and confidence in children through proven abacus techniques.',
   phone_1: '9566079479',
   phone_2: '9840883393',
-  email: 'info@krishkidsisland.com',
+  email: 'krishkidsisland@gmail.com',
   address: 'Plot No 122, Door No 7, 6th Street, JB Estate, Avadi, Chennai - 600054',
   hero_subtitle: 'Building brilliant minds through the ancient art of abacus, empowering children ages 4-14 with extraordinary mental math abilities.',
   about_mission: 'To ignite the spark of mathematical genius in every child through the time-tested abacus methodology, building confidence, concentration, and cognitive excellence.',
@@ -28,6 +28,7 @@ export const MOCK_COURSES = [
   { id: 3, title: 'Drawing', icon: '🎨' },
   { id: 4, title: 'Spell Bee', icon: '🐝' },
   { id: 5, title: 'Handwriting', icon: '✍️' },
+  { id: 6, title: 'Vedic Maths', icon: '🔢' },
 ];
 
 export const MOCK_RATINGS = [

@@ -79,9 +79,7 @@ export default function AboutPage() {
               { num: '500+', label: 'Students Trained', icon: '👨‍🎓' },
               { num: '10+', label: 'Years of Excellence', icon: '📅' },
               { num: '50+', label: 'Competition Awards', icon: '🏆' },
-              { num: '4', label: 'Course Levels', icon: '📊' },
               { num: '95%', label: 'Parent Satisfaction', icon: '❤️' },
-              { num: '20+', label: 'Expert Teachers', icon: '👩‍🏫' },
             ].map((a, i) => (
               <div key={i} className={styles.achieveCard}>
                 <span className={styles.achieveIcon}>{a.icon}</span>
