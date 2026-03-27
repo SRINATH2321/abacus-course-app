@@ -1,0 +1,227 @@
+.pageHeader {
+  background: linear-gradient(135deg, #0f0f3d 0%, #1a1a5e 50%, #0096b7 100%);
+  padding: 8rem 0 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.pageHeader::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 100%, rgba(240,165,0,0.15) 0%, transparent 60%);
+}
+.pageHeader h1 { color: var(--white); font-size: var(--fs-4xl); margin-bottom: 0.5rem; position: relative; }
+.pageHeader p { color: rgba(255,255,255,0.7); font-size: var(--fs-md); position: relative; }
+
+/* Summary Card */
+.summaryCard {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 3rem;
+  border: 1px solid var(--gray-100);
+}
+
+.summaryLeft {
+  text-align: center;
+  min-width: 160px;
+}
+
+.avgRating {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.avgStars {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.starFilled { color: var(--accent); }
+.starEmpty { color: var(--gray-300); }
+
+.totalReviews {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+}
+
+.summaryRight {
+  flex: 1;
+}
+
+.ratingBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.ratingLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  width: 35px;
+}
+
+.barTrack {
+  flex: 1;
+  height: 8px;
+  background: var(--gray-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+
+.ratingCount {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  width: 20px;
+  text-align: right;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Form */
+.formCard {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-100);
+  position: sticky;
+  top: 6rem;
+}
+
+.formCard h3 {
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.starInput {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.starBtn {
+  font-size: 2rem;
+  background: none;
+  cursor: pointer;
+  color: var(--gray-300);
+  transition: all var(--transition-fast);
+  padding: 0;
+  line-height: 1;
+}
+
+.starBtnActive {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+.ratingText {
+  margin-left: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.success {
+  background: rgba(46,204,113,0.1);
+  color: #1e8449;
+  border: 1px solid rgba(46,204,113,0.3);
+}
+
+/* Reviews */
+.reviewsList h3 {
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.reviewCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-100);
+  transition: all var(--transition-base);
+}
+
+.reviewCard:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.reviewAvatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--teal));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.reviewName {
+  font-size: 0.95rem;
+  color: var(--gray-800);
+}
+
+.reviewStars {
+  font-size: 0.85rem;
+}
+
+.reviewDate {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}
+
+.reviewText {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .summaryCard { flex-direction: column; gap: 1.5rem; }
+  .grid { grid-template-columns: 1fr; }
+  .formCard { position: static; }
+}

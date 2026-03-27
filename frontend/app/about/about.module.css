@@ -1,0 +1,227 @@
+/* Page Header — shared pattern */
+.pageHeader {
+  background: linear-gradient(135deg, #0f0f3d 0%, #1a1a5e 50%, #0096b7 100%);
+  padding: 8rem 0 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pageHeader::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 100%, rgba(240,165,0,0.15) 0%, transparent 60%);
+}
+
+.pageHeader h1 {
+  color: var(--white);
+  font-size: var(--fs-4xl);
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.pageHeader p {
+  color: rgba(255,255,255,0.7);
+  font-size: var(--fs-md);
+  position: relative;
+}
+
+/* Story */
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.storyContent {}
+
+.label {
+  display: inline-block;
+  background: rgba(240,165,0,0.15);
+  color: var(--accent-dark);
+  padding: 0.3rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.storyContent h2 {
+  margin-bottom: 1.5rem;
+}
+
+.storyContent p {
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.storyImage {}
+
+.storyImagePlaceholder {
+  background: linear-gradient(135deg, var(--primary), var(--teal-dark));
+  border-radius: var(--radius-xl);
+  padding: 4rem;
+  text-align: center;
+  color: var(--white);
+  aspect-ratio: 4/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.storyImagePlaceholder span {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.storyImagePlaceholder p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* Mission & Vision */
+.missionVision {
+  background: var(--gray-50);
+}
+
+.mvGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.mvCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  border: 1px solid var(--gray-100);
+}
+
+.mvCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mvIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.mvCard h3 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.mvCard p {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Achievements */
+.achievements {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, var(--teal-dark) 100%);
+}
+
+.achieveGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.achieveCard {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.achieveCard:hover {
+  background: rgba(255,255,255,0.18);
+  transform: translateY(-3px);
+}
+
+.achieveIcon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.achieveNum {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.achieveLabel {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Why Us */
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.whyCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-100);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.whyCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(240,165,0,0.3);
+}
+
+.whyIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.whyCard h4 {
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.whyCard p {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .storyGrid { grid-template-columns: 1fr; gap: 2rem; }
+  .mvGrid { grid-template-columns: 1fr; }
+  .achieveGrid { grid-template-columns: repeat(2, 1fr); }
+  .whyGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .achieveGrid { grid-template-columns: 1fr; }
+}
